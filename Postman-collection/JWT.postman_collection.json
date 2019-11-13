@@ -1,0 +1,196 @@
+{
+	"info": {
+		"_postman_id": "80c8ddf4-0e37-4327-96e8-729bf4fca071",
+		"name": "JWT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "signup admin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"prashanth\",\n\t\"username\":\"prashanthc\",\n\t\"email\":\"prashanth.chiluka@neosofttech.com\",\n\t\"role\":[\"admin\",\"pm\"],\n\t\"password\":\"123456789\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/auth/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"prashanthch\",\n\t\"password\":\"123456789\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/auth/signin",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Admin ",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYWdhcnQiLCJpYXQiOjE1NzM2MzMwODcsImV4cCI6MTU3MzcxOTQ4N30.vKPQznSM8oPK5_JeoMUxVVy8GL3iGvR-TuQxvIfbemw9q5tJrDKD5YbeGevXKu8jZ9iX51-3msj4MlCHxbG3gA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/test/admin",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"test",
+						"admin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get pm",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYWdhcnQiLCJpYXQiOjE1NzM2MzMwODcsImV4cCI6MTU3MzcxOTQ4N30.vKPQznSM8oPK5_JeoMUxVVy8GL3iGvR-TuQxvIfbemw9q5tJrDKD5YbeGevXKu8jZ9iX51-3msj4MlCHxbG3gA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/test/pm",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"test",
+						"pm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYWdhcnQiLCJpYXQiOjE1NzM2MzMwODcsImV4cCI6MTU3MzcxOTQ4N30.vKPQznSM8oPK5_JeoMUxVVy8GL3iGvR-TuQxvIfbemw9q5tJrDKD5YbeGevXKu8jZ9iX51-3msj4MlCHxbG3gA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/test/user",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"test",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"prashanth\",\n\t\"username\":\"prashanthch\",\n\t\"email\":\"prashanth.ch@neosofttech.com\",\n\t\"role\":[\"user\",\"pm\"],\n\t\"password\":\"123456789\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/auth/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
